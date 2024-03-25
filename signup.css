@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+}
+.all{
+    overflow: hidden;
+}
+.fir{
+    width: 100%;
+    height:100vh;
+    background-image:linear-gradient(to right, rgba(0,0,0,0.6)50%, rgb(0,0,0,0.6)50%), url("https://images.pexels.com/photos/1936750/pexels-photo-1936750.jpeg?auto=compress&cs=tinysrgb&w=1500");
+    background-repeat: no-repeat;
+    background-position: right;
+    color: white;
+}
+.navbar{
+    padding: 3px  14px 0px 10px;
+    width: 100%;
+    height: 80px;
+    background-image:linear-gradient(to right, rgba(0,0,0,0.6)50%, rgb(0,0,0,0.6)50%), url("https://images.pexels.com/photos/1936750/pexels-photo-1936750.jpeg?auto=compress&cs=tinysrgb&w=1500");
+    background-repeat: no-repeat;
+    position: fixed;
+}
+#offcanvasMenu{
+  width: 350px;
+}
+.nav-item{
+  font-weight: 800 !important;
+  font-size: 20px;
+  color: white;
+}
+.scr img{
+  width: 30px;
+}
+.scr h3{
+  font-weight: 600;
+  font-size: 26px;
+}
+button {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+.obi{
+    padding: 200px  14px 0px 40px;
+}
+.squ{
+    width: 270px;
+    height: 290px;
+    border: 4px solid ivory;
+}
+.iso{
+    position: absolute;
+    top: 240px;
+    left: 70px;
+    background-image:linear-gradient(to right, rgba(5, 5, 5, 0.6)50%, rgba(4, 4, 4, 0.6)50%), url("https://images.pexels.com/photos/1936750/pexels-photo-1936750.jpeg?auto=compress&cs=tinysrgb&w=1500");
+}
+.iso h3{
+    font-size: 40px;
+    font-weight: 800;
+}
+.too{
+    width: 140px;
+    height: 100px;
+    background-image:linear-gradient(to right, rgba(58, 57, 57, 0.6)50%, rgba(58, 57, 57, 0.6)50%), url("https://images.pexels.com/photos/1936750/pexels-photo-1936750.jpeg?auto=compress&cs=tinysrgb&w=1500");
+    padding: 10px;
+}
+.she{
+    position: absolute;
+    top: 350px;
+    left: 70px;
+}
+.too h5{
+    color: ivory;
+    font-weight: 800;
+    font-size: 30px;
+}
+.ile{
+  width: 100%;
+  display: flex;
+  padding: 130px 0px;
+  align-items: center;
+  justify-content: center;
+}
+.contain{
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  height: 470px;
+  background: transparent;
+  border-radius: 20px;
+  border: 2px solid rgba(257, 257, 257, .7);
+  backdrop-filter: blur(20px);
+}
+.main-box{
+  padding: 40px 50px 0px 50px;
+  width: 100%;
+}
+.main-box h1{
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.input-box{
+  position: relative;
+  height: 52px;
+  width: 100%;
+  border-bottom: 2px solid #ffffff;
+  margin: 32px 0;
+}
+.input-box label{
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 18px;
+  transition: all ease .40s;
+}
+.input-box input{
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 0 30px 0 6px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+.input-box .icon{
+  position: absolute;
+  right: 9px;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 55px;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+  top: -3px;
+}
+.btn{
+  width: 100%;
+  height: 45px;
+  background: #ffffff;
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: 600;
+  color: black;
+  margin-top: 10px;
+  cursor: pointer;
+}
+footer{
+  width: 100%;
+  padding: 0px 30px 30px 20px;
+  background-color: black;
+}
+footer input{
+  width: 100%;
+  height: 40px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  outline: none;
+}
+.ala h6{
+  margin-top: -15px;
+  margin-left: 10px;
+}
+footer h5{
+  margin-left: 10px;
+}
+@media (max-width:767px) {
+  .navbar{
+    padding: 3px  14px 0px 0px;
+  }
+  .scr img{
+    width: 27px;
+    margin-left: -5px;
+  }
+  footer{
+    padding: 20px  14px 40px 10px;
+  }
+  .com{
+    flex-direction: column;
+  }
+  .moni{
+    margin-left: -45px;
+  }
+  .obi{
+    padding: 120px  14px 0px 30px;
+}
+.iso{
+  position: absolute;
+  top: 180px;
+  left: 70px;
+}
+.too{
+  width: 120px;
+  height: 100px;
+  padding: 10px;
+}
+.iso h3{
+  font-size: 25px;
+}
+.she{
+  position: absolute;
+  top: 255px;
+  left: 70px;
+}
+.fir{
+  height: 143vh;
+}
+.ile{
+  padding: 50px 20px 30px 20px;
+}
+.main-box{
+  padding: 40px 15px 0px 15px;
+  width: 100%;
+}
+}

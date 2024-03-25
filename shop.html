@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structura</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/93483deb2b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <div class="all">
+      <section class="fir">
+        <nav class="navbar navbar-light sticky-top">
+          <div class="container-fluid">
+            <div class="scr d-flex align-items-center gap-2">
+              <img src="image/4fd4b7b905c94181f23deed5fd4b4826-removebg-preview.png" alt="">
+              <h3 class="navbar-brand mt-2 text-white">Structura</h1>
+            </div>
+            <div class="d-flex gap-2">
+              <div>
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  <span class="cart-icon" ><i class="fa-solid fa-cart-shopping text-white"></i> <span id="cart-counter" class="text-white">0</span>
+                  </span>
+                </button>
+              </div>
+              <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" >
+                <i class="fa-solid fa-bars navbar-icon text-white"></i>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+                <div class="offcanvas-header">
+                  <h5></h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav">
+                    <li class="nav-item mb-4 "><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item mb-4"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="oka">
+            <h1>SHOP</h1>
+            <h1 class="isa">ALL</h1>
+       </div>
+      </section>
+        <div class="offcanvas  offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <p>Start adding to your cart for FREE SHIPPING</p>
+            <hr>
+            <h5 class="text-center">If Not Now, When?</h5>
+            <a href="" class="d-flex justify-content-center mt-4"><button onclick="redirectToProductPage()" class="shop">Shop Now</button></a>
+            <div id="productDetails" class="selected-product">
+              <div class="d-flex gap-3">
+                <img id="selectedProductImage" src="" alt="">
+                <div class="">
+                <h6 id="selectedProductName"></h6>
+                <h6 id="selectedProductDescription"></h6>
+                <div class="quantity-adjustment">
+                   <div class="d-flex sid">
+                    <button onclick="adjustQuantity(-1)">-</button>
+                    <p id="selectedProductQuantity">1</p>
+                    <button onclick="adjustQuantity(1)">+</button>
+                   </div>
+                 <button class="remove-button" onclick="removeFromCart()">Remove</button>
+                </div>
+              </div>
+              </div>
+              <p id="selectedProductPrice"></p>
+            </div>
+            <h6 class="text-center mb-3 gog">Total Price: <span id="totalPrice">0.00</span></h6>
+            <div class="d-flex justify-content-center"><button onclick="checkout()" class="owo">Checkout</button></div>
+            <div class="dai">
+              <h6 class="mt-5">Shop Our Lineup</h6>
+              <hr>
+              <div class="inu d-flex justify-content-between yaa">
+                <div class="d-flex gap-4">
+                  <img src="image/2b79725d000cc73d16aeca42c1aeac58-removebg-preview.png" alt="">
+                  <div class="sweet">
+                    <h5>Fasteners</h5>
+                    <h6>Jackhammer</h6>
+                  </div>
+                </div>
+               <div class="fou">
+                <p id="productPrice">#13,000</p>
+                <button onclick="displayProductDetails('fasteners', 'Jackhammer', 13000, 'image/2b79725d000cc73d16aeca42c1aeac58-removebg-preview.png')" class="owo">QUICK ADD</button>
+               </div>
+            </div>
+            <hr>
+            <div class="inu d-flex justify-content-between yaa">
+              <div class="d-flex gap-4">
+                <img src="image/cc8e0d8c8f26ed7fa4ff0fe4b8703602-removebg-preview.png" alt="">
+                <div class="sweet">
+                  <h5>Fasteners</h5>
+                  <h6>Screwing Machine</h6>
+                </div>
+              </div>
+             <div class="fou">
+              <p id="productPrice">#23,000</p>
+              <button onclick="displayProductDetails('fasteners', 'Screwing Machine', 23000, 'image/cc8e0d8c8f26ed7fa4ff0fe4b8703602-removebg-preview.png')" class="owo">QUICK ADD</button>
+             </div>
+          </div>
+            <hr>
+            <div class="inu d-flex justify-content-between">
+              <div class="d-flex gap-3">
+                <img src="image/ec10f71c030f51db991a4d0915191361-removebg-preview.png" alt="">
+              <div class="sweet">
+                <h5>metal materials</h5>
+                <h6>Sotblast Concrete Block</h6>
+              </div>
+              </div>
+             <div class="fou">
+              <p id="productPrice">#2,700</p>
+              <button onclick="displayProductDetails('metal materials', 'Sotblast Concrete Block', 2700, 'image/ec10f71c030f51db991a4d0915191361-removebg-preview.png')" class="owo">QUICK ADD</button>
+             </div>
+          </div>
+            <hr>
+            <div class="inu d-flex justify-content-between">
+              <div class="d-flex gap-3">
+                <img src="image/e4ae8b67b924dc4bf58682bdaadf0dc2-removebg-preview.png" alt="">
+              <div class="sweet">
+                <h5>wood products</h5>
+                <h6>Oriented Board Pipe</h6>
+              </div>
+              </div>
+             <div class="fou">
+              <p id="productPrice">#37,300</p>
+              <button onclick="displayProductDetails('wood products', 'Oriented Board Pipe', 37300, 'image/e4ae8b67b924dc4bf58682bdaadf0dc2-removebg-preview.png')" class="owo">QUICK ADD</button>
+             </div>
+          </div>
+            <hr>
+            <div class="inu d-flex justify-content-between">
+              <div class="d-flex gap-3">
+                <img src="image/07a34a1d893f59d8712f340b7d6e3229-removebg-preview.png" alt="">
+              <div class="sweet">
+                <h5>glass materials</h5>
+                <h6>Safety Glass</h6>
+              </div>
+              </div>
+             <div class="fou">
+              <p id="productPrice">#1,200</p>
+              <button onclick="displayProductDetails('glass materials', 'Safety Glass', 1200, 'image/07a34a1d893f59d8712f340b7d6e3229-removebg-preview.png')" class="owo">QUICK ADD</button>
+             </div>
+          </div>
+          <hr>
+          <div class="inu d-flex justify-content-between">
+            <div class="d-flex gap-3">
+              <img src="image/fa2dcbdc25d73521b7b4837190da73d6-removebg-preview.png" alt="">
+            <div class="sweet">
+              <h5>fasteners</h5>
+              <h6>Nails</h6>
+            </div>
+            </div>
+           <div class="fou">
+            <p id="productPrice">#14,100</p>
+            <button onclick="displayProductDetails('fasteners', 'Nails', 14100, 'image/fa2dcbdc25d73521b7b4837190da73d6-removebg-preview.png')" class="owo">QUICK ADD</button>
+           </div>
+        </div>
+          </div>
+  </div>
+        </div>
+        <section class="two">
+          <div class="row ">
+            <div class="col col-lg-4">
+              <div class="ala">
+                <video autoplay muted loop>
+                  <source src="https://videos.pond5.com/man-using-jackhammer-montage-video-footage-012225531_main_xxl.mp4" type="video/mp4">
+                </video>
+                <div class="obe">
+                  <h5>Jackhammer</h5>
+                  <h5>High Durability</h5>
+                  <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+                <div class="ibe">
+                  <div class="d-flex justify-content-between">
+                    <h5>Warranty</h5>
+                    <h5>4years</h5>
+                  </div>
+                    <div data-tooltip="Price:-#1300" class="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                      <div class="button-wrapper">
+                        <div class="text">Add to Bag</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>  
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-4">
+              <div class="ala">
+                <video autoplay muted loop>
+                  <source src="https://videos.pond5.com/panorama-shelves-diy-shop-variety-footage-139658190_main_xxl.mp4" type="video/mp4">
+                </video>
+                <div class="obe obes">
+                  <h5>Screwing Machine</h5>
+                  <h5>High Durability</h5>
+                  <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+                <div class="ibe ibes">
+                  <div class="d-flex justify-content-between">
+                    <h5>Warranty</h5>
+                    <h5>1year</h5>
+                  </div>
+                    <div data-tooltip="Price:-#23000" class="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                      <div class="button-wrapper">
+                        <div class="text">Add to Bag</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>   
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-4">
+              <div class="ala">
+                <video autoplay muted loop>
+                  <source src="https://videos.pond5.com/foam-block-laying-special-mortar-footage-232577468_main_xxl.mp4" type="video/mp4">
+                </video>
+                <div class="obe iss">
+                  <h5>Sotblast Concrete Block</h5>
+                  <h5>High Durability</h5>
+                  <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+                <div class="ibe ise">
+                  <div class="d-flex justify-content-between">
+                    <h5>Warranty</h5>
+                    <h5>1month</h5>
+                  </div>
+                    <div data-tooltip="Price:-#2700" class="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" >
+                      <div class="button-wrapper">
+                        <div class="text">Add to Bag</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>    
+                </div>
+              </div>
+            </div>  
+          </div>
+        </section>
+
+        <section class="three">
+          <div class="row">
+            <div class="col col-lg-8">
+              <div class="lat">
+                <h1>RHYTHM OF CEMENT AND TROWEL </h1>
+                <div class="once">
+                  <h5>100%</h5>
+                  <h6>Craftsman's hands in timeless embrace.</h6>
+                    <h6>Infinite patience, a skill refined. <br>  In the wall's sturdy embrace, we find, <br> The artistry of the master's mind.</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-4">
+              <div class="jus">
+                <div class="sam">
+                  <img src="image/ec10f71c030f51db991a4d0915191361-removebg-preview.png" alt="">
+                </div>
+                <h6 class="mt-3">Mansory materials</h6>
+                <div class="d-flex justify-content-between">
+                  <h5 >Sotblast Concrete Block</h5>
+                  <h5 class="">#2,700</h5>
+                </div>
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="three">
+          <div class="row">
+            <div class="col col-lg-4">
+              <div class="jus">
+                <div class="sam">
+                  <img src="image/efac6adbf8b0a397930258f027fe420c-removebg-preview.png" alt="">
+                </div>
+                <h6 class="mt-3">Metal materials</h6>
+                <div class="d-flex justify-content-between">
+                  <h5 >Copper Channel</h5>
+                  <h5 class="">#2,600</h5>
+                </div>
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-8">
+              <div class="let">
+                <h1>MEN MOUNTING ON ELECTRIC POLE</h1>
+                <div class="once">
+                  <h5>100%</h5>
+                  <h6>Craftsman's hands in timeless embrace.</h6>
+                    <h6>Infinite patience, a skill refined. <br>  In the wall's sturdy embrace, we find, <br> The artistry of the master's mind.</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      <footer>
+        <div class="row">
+          <div class="d-flex justify-content-between align-items-center com">
+            <div class="ala">
+              <div class="scr d-flex align-items-center gap-2">
+                <img src="image/4fd4b7b905c94181f23deed5fd4b4826-removebg-preview.png" alt="">
+                <h3 class="navbar-brand mt-2 text-white">Structura</h1>
+              </div>
+              <h6 class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, dolorum!</h6>
+            </div>
+            <div class="mt-5 moni">
+              <h6 class="text-white">Enter your email to register with us</h6>
+              <form action="">
+                <input type="email" placeholder="structura@gmail.com" name="" id="">
+              </form>
+            </div>
+          </div>
+          <h5 class="text-white">Structura &copy; 2024</h5>
+        </div>
+      </footer> 
+    </div>
+    <script>
+      let cartCounter = 0;
+      let totalPrice = 0; 
+      function checkout() {
+        const productName = document.getElementById('selectedProductName').textContent;
+        const productImage = document.getElementById('selectedProductImage').src;
+        const totalPrice = document.getElementById('totalPrice').textContent;
+        window.open(`check.html?productName=${encodeURIComponent(productName)}&productImage=${encodeURIComponent(productImage)}&totalPrice=${encodeURIComponent(totalPrice)}`, '_blank');
+      }
+      function updateTotalPrice() {
+        const totalPriceElement = document.getElementById('totalPrice');
+      totalPriceElement.textContent = totalPrice.toFixed(2);
+      }
+
+function toggleCart() {
+    const offCanvas = document.querySelector('.offcanvas');
+    offCanvas.style.right = offCanvas.style.right === '0px' ? '-600px' : '0';
+}
+
+function redirectToProductPage() {
+    console.log('Redirecting to the product page...');
+}
+
+function displayProductDetails(name, description, price, image) {
+    const selectedProduct = document.getElementById('productDetails');
+    const selectedProductName = document.getElementById('selectedProductName');
+    const selectedProductDescription = document.getElementById('selectedProductDescription');
+    const selectedProductPrice = document.getElementById('selectedProductPrice');
+    const selectedProductImage = document.getElementById('selectedProductImage');
+    const selectedProductQuantity = document.getElementById('selectedProductQuantity');
+    const quantityAdjustment = document.querySelector('.quantity-adjustment');
+    const removeButton = document.querySelector('.remove-button');
+
+    selectedProductPrice.dataset.initialPrice = price;
+
+    selectedProductName.textContent = name;
+    selectedProductDescription.textContent = description;
+    selectedProductPrice.textContent = `#${price}`;
+    selectedProductImage.src = image;
+    selectedProductQuantity.textContent = '1';
+    quantityAdjustment.style.display = 'flex';
+    removeButton.style.display = 'block';
+
+    selectedProduct.style.display = 'flex';
+    selectedProduct.style.flexDirection = 'row';
+
+    updateCartCounter(1);
+    totalPrice += price;
+    updateTotalPrice();
+}
+
+function adjustQuantity(amount) {
+    const selectedProductQuantity = document.getElementById('selectedProductQuantity');
+    let quantity = parseInt(selectedProductQuantity.textContent) + amount;
+    quantity = Math.max(quantity, 1);
+
+    selectedProductQuantity.textContent = quantity.toString();
+    updatePrice();
+    const selectedProductPrice = document.getElementById('selectedProductPrice');
+    const initialPrice = parseFloat(selectedProductPrice.dataset.initialPrice);
+    totalPrice += amount * initialPrice;
+
+    updateTotalPrice();
+}
+
+function updatePrice() {
+    const selectedProductPrice = document.getElementById('selectedProductPrice');
+    const selectedProductQuantity = document.getElementById('selectedProductQuantity');
+    const initialPrice = parseFloat(selectedProductPrice.dataset.initialPrice);
+    const quantity = parseInt(selectedProductQuantity.textContent);
+
+    const updatedPrice = quantity * initialPrice;
+    selectedProductPrice.textContent = `$${updatedPrice.toFixed(2)}`;
+}
+
+function updateCartCounter(delta) {
+    cartCounter += delta;
+    const cartCounterElement = document.getElementById('cart-counter');
+    cartCounterElement.textContent = cartCounter.toString();
+}
+
+function removeFromCart() {
+    const selectedProduct = document.getElementById('productDetails');
+    selectedProduct.style.display = 'none';
+    updateCartCounter(-1);
+    const selectedProductPrice = document.getElementById('selectedProductPrice');
+    const initialPrice = parseFloat(selectedProductPrice.dataset.initialPrice);
+    const quantity = parseInt(document.getElementById('selectedProductQuantity').textContent);
+    totalPrice -= quantity * initialPrice;
+
+    updateTotalPrice();
+}
+    </script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="main.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

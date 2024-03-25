@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+}
+.all{
+    overflow: hidden;
+}
+.fir{
+    width: 100%;
+    height:100vh;
+    background-image:linear-gradient(to right, rgba(0,0,0,0.6)50%, rgb(0,0,0,0.6)50%), url("https://images.pexels.com/photos/1936750/pexels-photo-1936750.jpeg?auto=compress&cs=tinysrgb&w=1500");
+    background-repeat: no-repeat;
+    background-position: right;
+    color: white;
+}
+.navbar{
+    padding: 3px  14px 0px 10px;
+    width: 100%;
+    height: 80px;
+    background-image:linear-gradient(to right, rgba(0,0,0,0.6)50%, rgb(0,0,0,0.6)50%), url("https://images.pexels.com/photos/1936750/pexels-photo-1936750.jpeg?auto=compress&cs=tinysrgb&w=1500");
+    background-repeat: no-repeat;
+    position: fixed;
+}
+.btn{
+  background-color: transparent;
+}
+#offcanvasRight{
+  width: 500px;
+}
+#cart-counter{
+  font-weight: 800;
+  font-size: 23px;
+}
+.cart-icon{
+  font-size: 20px;
+}
+.offcanvas-body p{
+  margin-top: -15px;
+  font-weight: 800;
+}
+.shop{
+  width: 130px;
+  height: 50px;
+  background-color:  rgb(238, 215, 181);
+  border-radius: 5px;
+  font-weight: 800;
+}
+.offcanvas-body a{
+  text-decoration: none;
+}
+.offcanvas-body h5{
+  font-size: 30px;
+  font-weight: 800;
+}
+.dai h6{
+  font-weight: 800;
+  font-size: 18px;
+}
+#productDetails {
+  display: none;
+  flex-direction: column-reverse;
+  display: flex;
+  justify-content: space-between;
+}
+.fou{
+  padding: 10px 0px 0px 0px ;
+}
+.fou p{
+  font-size: 20px;
+}
+.owo{
+  width: 130px;
+  height: 40px;
+  background-color:  rgb(238, 215, 181);
+  border-radius: 5px;
+  font-weight: 800;
+  font-size: 16px;
+}
+.sid{
+  border: 1px solid black;
+  height: 40px;
+  width: 110px;
+  gap: 33px;
+  padding: 6px;
+  border-radius: 6px;
+}
+.remove-button{
+  margin-left: 20px;
+  text-decoration: underline;
+}
+#selectedProductQuantity{
+  margin-top: 2px !important;
+}
+#selectedProductDescription{
+  font-weight: 800;
+  font-size: 19px;
+}
+#totalPrice{
+  font-weight: 800;
+}
+.sweet h5{
+  font-size: 15px;
+}
+.inu img{
+  width: 100px;
+}
+.selected-product {
+  display: none;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.selected-product img {
+  width: 80px;
+}
+.quantity-adjustment {
+  display: none;
+  align-items: center;
+}
+#offcanvasMenu{
+  width: 350px;
+}
+.nav-item{
+  font-weight: 800 !important;
+  font-size: 20px;
+  color: white;
+}
+.scr img{
+  width: 30px;
+}
+.scr h3{
+  font-weight: 600;
+  font-size: 26px;
+}
+button {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+.oka{
+  width: 100%;
+  padding: 240px  14px 0px 30px;
+}
+.oka h1{
+  font-size: 50px;
+  font-weight: 800;
+}
+.oka h6{
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+.buttons button {
+  width: 150px;
+  height: 50px;
+  background-color: ivory;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.buttons button:before, .buttons button:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: ivory;
+  transition: all 0.3s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+.buttons button:before {
+  right: 0;
+  top: 0;
+  transition: all 0.5s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+.buttons button:after {
+  left: 0;
+  bottom: 0;
+}
+.buttons button span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+.buttons button span:before, .buttons button span:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 0;
+  background-color: ivory;
+  transition: all 0.3s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+.buttons button span:before {
+  right: 0;
+  top: 0;
+  transition: all 0.5s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+.buttons button span:after {
+  left: 0;
+  bottom: 0;
+}
+.buttons button p {
+  padding: 0;
+  margin: 0;
+  transition: all 0.4s cubic-bezier(0.35, 0.1, 0.25, 1);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.buttons button p:before, .buttons button p:after {
+  position: absolute;
+  width: 100%;
+  transition: all 0.4s cubic-bezier(0.35, 0.1, 0.25, 1);
+  z-index: 1;
+  left: 0;
+}
+.buttons button p:before {
+  content: attr(data-title);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.buttons button p:after {
+  content: attr(data-text);
+  top: 150%;
+  color: black;
+}
+.buttons button:hover:before, .buttons button:hover:after {
+  width: 100%;
+}
+.buttons button:hover span {
+  z-index: 1;
+}
+.buttons button:hover span:before, .buttons button:hover span:after {
+  height: 100%;
+}
+.buttons button:hover p:before {
+  top: -50%;
+  transform: rotate(5deg);
+}
+.buttons button:hover p:after {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.buttons button.start {
+  background-color: #44d8a4;
+  box-shadow: 0px 5px 10px -10px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+.buttons button.start p:before {
+  top: -50%;
+  transform: rotate(5deg);
+}
+.buttons button.start p:after {
+  color: white;
+  transition: all 0s ease;
+  content: attr(data-start);
+  top: 50%;
+  transform: translateY(-50%);
+  animation: start 0.3s ease;
+  animation-fill-mode: forwards;
+}
+@keyframes start {
+  from {
+    top: -50%;
+  }
+}
+.buttons button.start:hover:before, .buttons button.start:hover:after {
+  display: none;
+}
+.buttons button.start:hover span {
+  display: none;
+}
+.buttons button:active {
+  outline: none;
+  border: none;
+}
+.buttons button:focus {
+  outline: 0;
+}
+.two{
+  width: 100%;
+  background-color: ivory;
+  padding: 40px  14px 0px 30px;
+}
+.ona{
+  width: 100%;
+  border: 1px solid black;
+  padding: 20px 10px 20px 10px;
+  border-radius: 5px;
+}
+.ona span{
+  font-size: 70px;
+}
+.ona i{
+  margin-top: -13px;
+  background-color: black;
+  color: white;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ona h5{
+  font-weight: 800;
+}
+.awa{
+  margin-top: 50px;
+}
+.awu{
+  margin-top: 100px;
+}
+.anri{
+  margin-top: -70px;
+}
+.anti{
+  margin-top: -20px;
+}
+.anwi{
+  margin-top: 30px;
+}
+.three,.four{
+  width: 100%;
+  padding: 70px  14px 30px 30px;
+}
+.mrs h4{
+  font-weight: 800;
+  font-size: 40px;
+}
+.mrs h6{
+  line-height: 21px;
+  letter-spacing: 1px;
+}
+.iya img{
+  width: 260px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+.mowa{
+  background-color: rgb(197, 157, 97) !important;
+  color: white !important;
+}
+.aww p i{
+  color: rgb(197, 157, 97);
+}
+.ali h4{
+  font-weight: 800;
+}
+.ali h6{
+  line-height: 26px;
+  margin-top: 20px;
+}
+.unn i{
+  margin-top: -10px;
+}
+
+footer{
+  width: 100%;
+  padding: 0px 30px 30px 20px;
+  background-color: black;
+}
+footer input{
+  width: 100%;
+  height: 40px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  outline: none;
+}
+.ala h6{
+  margin-top: -15px;
+  margin-left: 10px;
+}
+footer h5{
+  margin-left: 10px;
+}
+@media (max-width:767px) {
+  .navbar{
+    padding: 3px  14px 0px 0px;
+  }
+  .scr img{
+    width: 27px;
+    margin-left: -5px;
+  }
+  .oka{
+    padding: 150px  14px 40px 15px;
+  }
+  .two,.three,.four{
+    padding: 50px  14px 40px 15px;
+  }
+  .awa,.awu,.anri,.anti,.anwi{
+    margin-top: 20px;
+  }
+  .ona span{
+    font-size: 50px;
+  }
+  .aww{
+    flex-direction: column;
+  }
+  .iya img{
+    width: 330px;
+  }
+  .ali h4{
+    margin-top: 20px;
+  }
+  .scr img{
+    width: 27px;
+    margin-left: -5px;
+  }
+  footer{
+    padding: 20px  14px 40px 10px;
+  }
+  .com{
+    flex-direction: column;
+  }
+  .moni{
+    margin-left: -45px;
+  }
+  .owo{
+    width: 90px;
+  }
+  .inu img{
+    width: 60px;
+    height: 60px;
+  }
+}

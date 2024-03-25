@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structura</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/93483deb2b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="all">
+      <section class="fir">
+        <nav class="navbar navbar-light sticky-top">
+          <div class="container-fluid">
+            <div class="scr d-flex align-items-center gap-2">
+              <img src="image/4fd4b7b905c94181f23deed5fd4b4826-removebg-preview.png" alt="">
+              <h3 class="navbar-brand mt-2 text-white">Structura</h1>
+            </div>
+            <div class="d-flex gap-2">
+              <div>
+                <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  <span class="cart-icon" ><i class="fa-solid fa-cart-shopping text-white"></i> <span id="cart-counter" class="text-white">0</span>
+                  </span>
+                </button>
+              </div>
+              <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" >
+                <i class="fa-solid fa-bars navbar-icon text-white"></i>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+                <div class="offcanvas-header">
+                  <h5></h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav">
+                    <li class="nav-item mb-4 "><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item mb-4"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="row rat d-flex flex-column">
+         <h1>Building Your Vision With Precision</h1>
+         <h5 class="mt-4 mb-4">We are Structura, your trusted partner in the world of construction, with a legacy of excellence and a commitment to quality, we turn your vision into quality.</h6>
+          <div class="buttons mt-2">
+            <a href="services.html"><button class="btn"><span></span><p data-start="good luck!" data-text="start!" data-title="Learn More"></p></button></a>
+         </div>
+        </div> 
+        <div class="offcanvas  offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <p>Start adding to your cart for FREE SHIPPING</p>
+            <hr>
+            <h5 class="text-center">If Not Now, When?</h5>
+            <a href="shop.html" class="d-flex justify-content-center mt-4"><button class="shop">Shop Now</button></a>
+            <div id="productDetails" class="selected-product">
+              <div class="d-flex gap-3">
+                <img id="selectedProductImage" src="" alt="">
+                <div class="">
+                <h6 id="selectedProductName"></h6>
+                <h6 id="selectedProductDescription"></h6>
+                <div class="quantity-adjustment">
+                   <div class="d-flex sid">
+                    <button onclick="adjustQuantity(-1)">-</button>
+                    <p id="selectedProductQuantity">1</p>
+                    <button onclick="adjustQuantity(1)">+</button>
+                   </div>
+                 <button class="remove-button" onclick="removeFromCart()">Remove</button>
+                </div>
+              </div>
+              </div>
+              <p id="selectedProductPrice"></p>
+            </div>
+            <h6 class="text-center mb-4">Total Price: <span id="totalPrice">0.00</span></h6>
+            <div class="d-flex justify-content-center"><button onclick="checkout()" class="owo">Checkout</button></div>
+            <div class="dai">
+              <h6 class="mt-5">Shop Our Lineup</h6>
+              <hr>
+              <div class="inu d-flex justify-content-between">
+                <div class="d-flex gap-3">
+                  <img src="image/ec10f71c030f51db991a4d0915191361-removebg-preview.png" alt="">
+                <div class="sweet">
+                  <h5>mansory materials</h5>
+                  <h6>Sotblast Concrete Block</h6>
+                </div>
+                </div>
+               <div class="fou">
+                <p id="productPrice">#2,700</p>
+                <button onclick="displayProductDetails('mansory materials', 'Sotblast Concrete Block', 2700, 'image/ec10f71c030f51db991a4d0915191361-removebg-preview.png')" class="owo">QUICK ADD</button>
+               </div>
+            </div>
+            <hr>
+            <div class="inu d-flex justify-content-between">
+              <div class="d-flex gap-3">
+                <img src="image/1928d9cd952d7f1aff0a0fa6e1787903-removebg-preview.png" alt="">
+              <div class="sweet">
+                <h5>mansory materials</h5>
+                <h6>Stone Palette Brick</h6>
+              </div>
+              </div>
+             <div class="fou">
+              <p id="productPrice">#3,700</p>
+              <button onclick="displayProductDetails('mansory materials', 'Stone Pallete Brick', 3700, 'image/1928d9cd952d7f1aff0a0fa6e1787903-removebg-preview.png')" class="owo">QUICK ADD</button>
+             </div>
+          </div>
+            <hr>
+            <div class="inu d-flex justify-content-between">
+              <div class="d-flex gap-4 ser">
+                <img src="image/fddb8e4b0bbc15ee221af78731f9f586-removebg-preview.png" alt="">
+                <div class="sweet">
+                  <h5>mansory materials</h5>
+                  <h6>Serpentine Dolomite Stone</h6>
+                </div>
+              </div>
+             <div class="fou">
+              <p id="productPrice">#8,000</p>
+              <button onclick="displayProductDetails('mansory materials', 'Serpentine Dolomite Stone', 8000, 'image/fddb8e4b0bbc15ee221af78731f9f586-removebg-preview.png')" class="owo">QUICK ADD</button>
+             </div>
+          </div>
+          <hr>
+              <div class="inu d-flex justify-content-between">
+                <div class="d-flex gap-4">
+                  <img src="image/5fc31883610f0a89cdb4360ac3bf15f5-removebg-preview.png" alt="">
+                  <div class="sweet">
+                    <h5>mansory materials</h5>
+                    <h6>Boulder Mortar</h6>
+                  </div>
+                </div>
+               <div class="fou">
+                <p id="productPrice">#80,000</p>
+                <button onclick="displayProductDetails('mansory materials', 'Boulder Mortar', 80000, 'image/5fc31883610f0a89cdb4360ac3bf15f5-removebg-preview.png')" class="owo">QUICK ADD</button>
+               </div>
+            </div>
+            <hr>
+            <div class="inu d-flex justify-content-between">
+              <div class="d-flex gap-3">
+                <img src="image/07a34a1d893f59d8712f340b7d6e3229-removebg-preview.png" alt="">
+              <div class="sweet">
+                <h5>glass materials</h5>
+                <h6>Safety Glass</h6>
+              </div>
+              </div>
+             <div class="fou">
+              <p id="productPrice">#1,200</p>
+              <button onclick="displayProductDetails('glass materials', 'Safety Glass', 1200, 'image/07a34a1d893f59d8712f340b7d6e3229-removebg-preview.png')" class="owo">QUICK ADD</button>
+             </div>
+          </div>
+          <hr>
+          <div class="inu d-flex justify-content-between">
+            <div class="d-flex gap-3">
+              <img src="image/fa2dcbdc25d73521b7b4837190da73d6-removebg-preview.png" alt="">
+            <div class="sweet">
+              <h5>fasteners</h5>
+              <h6>Nails</h6>
+            </div>
+            </div>
+           <div class="fou">
+            <p id="productPrice">#14,100</p>
+            <button onclick="displayProductDetails('fasteners', 'Nails', 14100, 'image/fa2dcbdc25d73521b7b4837190da73d6-removebg-preview.png')" class="owo">QUICK ADD</button>
+           </div>
+        </div>
+          </div>
+  </div>
+        </div>
+      </section>
+
+
+      <section class="two">
+        <div class="row">
+          <div class="col col-lg-3 col-6">
+            <div class="rate">
+              <h3>200+</h3>
+              <h6>Materials Supplied</h6>
+            </div>
+          </div>
+
+          <div class="col col-lg-3 col-6">
+            <div class="rate">
+              <h3>200+</h3>
+              <h6>Materials Supplied</h6>
+            </div>
+          </div>
+
+          <div class="col col-lg-3 col-6">
+            <div class="rate">
+              <h3>500+</h3>
+              <h6>Satisfied Customers</h6>
+            </div>
+          </div>
+
+          <div class="col col-lg-3 col-6">
+            <div class="rate">
+              <h3>200+</h3>
+              <h6>Good Reviews</h6>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col col-lg-3 col-12 mb-3">
+            <div class="ras d-flex align-items-center gap-2">
+              <div><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <div>
+                  <h6>dhhdhdhdhd</h6>
+                  <h6>dhhdhdhdhd</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-lg-3 col-12 mb-3">
+            <div class="ras d-flex align-items-center gap-2">
+              <div><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <div>
+                  <h6>dhhdhdhdhd</h6>
+                  <h6>dhhdhdhdhd</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-lg-3 col-12 mb-3">
+            <div class="ras d-flex align-items-center gap-2">
+              <div><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <div>
+                  <h6>dhhdhdhdhd</h6>
+                  <h6>dhhdhdhdhd</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-lg-3 col-12">
+            <div class="ras d-flex align-items-center gap-2">
+              <div><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <div>
+                  <h6>dhhdhdhdhd</h6>
+                  <h6>dhhdhdhdhd</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="three">
+        <div class="row">
+          <h4 class="mb-3">Why Choose Struktura Construction</h4>
+          <h6 class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis non cum repellendus dicta quod laboriosam iusto iure placeat laudantium veritatis! Tenetur voluptas expedita possimus ratione ullam.</h6>
+          <div class="col col-lg-4 col-12 mb-3">
+            <div class="ido">
+              <i class="fa-solid fa-clock"></i>
+              <h6>Trusted Employees</h6>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, velit?</p>
+            </div>
+          </div>
+
+          <div class="col col-lg-4 col-12 mb-3">
+            <div class="hun">
+              <i class="fa-solid fa-clock"></i>
+              <h6>Trusted Employees</h6>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, velit?</p>
+            </div>
+          </div>
+
+          <div class="col col-lg-4 col-12">
+            <div class="ido">
+              <i class="fa-solid fa-clock"></i>
+              <h6>Trusted Employees</h6>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, velit?</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="four">
+        <div class="row">
+          <h4 class="mb-3">Tailored Construction Solutions</h4>
+          <h6 class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ea quidem obcaecati qui, eius rem quam dolorem aperiam velit corporis veniam repudiandae nesciunt atque, illum error ducimus, quo delectus! Iure!</h6>
+          <div class="col col-lg-4 col-12 mb-3">
+            <div class="lal">
+              <h5>Men working on electric pole</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iste quia facere.</p>
+              <a href="services.html"><h6>Learn More <i class="fa-solid fa-arrow-right"></i></h6></a>
+            </div>
+          </div>
+
+          <div class="col col-lg-4 col-12 mb-5">
+            <div class="lat">
+              <h5>Men working on electric pole</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iste quia facere.</p>
+              <a href="services.html"><h6>Learn More <i class="fa-solid fa-arrow-right"></i></h6></a>
+            </div>
+          </div>
+
+          <div class="col col-lg-4 col-12">
+            <div class="law">
+              <h5>Men working on electric pole</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iste quia facere.</p>
+              <a href="services.html"><h6>Learn More <i class="fa-solid fa-arrow-right"></i></h6></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="five">
+        <div class="row">
+          <h4 class="mb-3">Elevate Your Projects with Our Products</h4>
+          <h6 class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsa fugit cum ratione dolor eligendi expedita natus nulla nam nisi. Enim corporis, voluptates, officia soluta explicabo, ex doloremque veniam adipisci molestiae doloribus dolor! Repellat, voluptate.</h6>
+              <div class="materials">
+                <button class="colo" onclick="showCar('volvo')" class="active">Mansory Materials</button>
+                <button class="colo" onclick="showCar('camry')">Metals Materials</button>
+                <button class="colo" onclick="showCar('merce')">Wood Products</button>
+                <button class="colo" onclick="showCar('glass')">Glass Materials</button>
+                <button class="colo" onclick="showCar('roof')">Fasteners</button>
+            </div>
+            <div id="volvo" class="car-content mt-3">
+                 <div class="ohh">
+                    <div class="fine">
+                      <img src="image/ec10f71c030f51db991a4d0915191361-removebg-preview.png" alt="">
+                      <h5 class="mt-3">Sotblast Concrete Block</h5>
+                      <h6>High Durability</h6>
+                      <div class="d-flex justify-content-between">
+                        <p class="anu">#3,600</p>
+                        <p class="kilo">#2,700</p>
+                      </div>
+                        <div data-tooltip="Price:-#2700" class="button" class="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                          <div class="button-wrapper">
+                            <div class="text">Buy Now</div>
+                              <span class="icon">
+                                <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                                </svg>
+                              </span>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="fine">
+                      <img src="image/1928d9cd952d7f1aff0a0fa6e1787903-removebg-preview.png" alt="">
+                      <h5 class="mt-3">Stone Palette Brick</h5>
+                      <h6>High Durability</h6>
+                      <div class="d-flex justify-content-between">
+                        <p class="anu">#5,600</p>
+                        <p class="kilo">#3,700</p>
+                      </div>
+                        <div data-tooltip="Price:-#3700" class="button" class="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <div class="button-wrapper">
+                          <div class="text">Buy Now</div>
+                            <span class="icon">
+                              <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                        </svg>
+                            </span>
+                          </div>
+                        </div>  
+                    </div>
+
+                    <div class="fine">
+                      <img src="image/fddb8e4b0bbc15ee221af78731f9f586-removebg-preview.png" alt="">
+                      <h5 class="mt-3">Serpentine Dolomite Stone</h5>
+                      <h6>High Durability</h6>
+                      <div class="d-flex justify-content-between">
+                        <p class="anu">#10,600</p>
+                        <p class="kilo">#8,000</p>
+                      </div>
+                        <div data-tooltip="Price:-#8000" class="button" class="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                          <div class="button-wrapper">
+                            <div class="text">Buy Now</div>
+                              <span class="icon">
+                                <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                          </svg>
+                              </span>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="fine">
+                      <img src="image/5fc31883610f0a89cdb4360ac3bf15f5-removebg-preview.png" alt="">
+                      <h5 class="mt-3">Boulder Mortar</h5>
+                      <h6>High Durability</h6>
+                      <div class="d-flex justify-content-between">
+                        <p class="anu">#100,600</p>
+                        <p class="kilo">#80,000</p>
+                      </div>
+                        <div data-tooltip="Price:-#80000" class="button" class="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                          <div class="button-wrapper">
+                            <div class="text">Buy Now</div>
+                              <span class="icon">
+                                <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                          </svg>
+                              </span>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        
+            <div id="camry" class="car-content mt-3">
+              <div class="ohh">
+                <div class="fine">
+                  <img src="image/23f85fdf6288eea0a5c40beb885b267e-removebg-preview.png" alt="">
+                  <h5 class="mt-3">Alloy Welded Pipe</h5>
+                  <h6>High Durability</h6>
+                  <div class="d-flex justify-content-between">
+                    <p class="anu">#10,300</p>
+                    <p class="kilo">#8,000</p>
+                  </div>
+                    <div data-tooltip="Price:-#8000" class="button" class="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                      <div class="button-wrapper">
+                        <div class="text">Buy Now</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                      </svg>
+                          </span>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="fine">
+                  <img src="image/0b3c983ed5c313493555d72f172661b6-removebg-preview.png" alt="">
+                  <h5 class="mt-3">Aluminium Glass Channel</h5>
+                  <h6>High Durability</h6>
+                  <div class="d-flex justify-content-between">
+                    <p class="anu">#15,600</p>
+                    <p class="kilo">#12,000</p>
+                  </div>
+                    <div data-tooltip="Price:-#12000" class="button" class="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                      <div class="button-wrapper">
+                        <div class="text">Buy Now</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                      </svg>
+                          </span>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="fine">
+                  <img src="image/efac6adbf8b0a397930258f027fe420c-removebg-preview.png" alt="">
+                  <h5 class="mt-3">Copper Channel</h5>
+                  <h6>High Durability</h6>
+                  <div class="d-flex justify-content-between">
+                    <p class="anu">#3,100</p>
+                    <p class="kilo">#2,600</p>
+                  </div>
+                    <div data-tooltip="Price:-#2600" class="button" class="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                      <div class="button-wrapper">
+                        <div class="text">Buy Now</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                      </svg>
+                          </span>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="fine">
+                  <img src="image/13e7dd0134b584361a4e61ab5895783c-removebg-preview.png" alt="">
+                  <h5 class="mt-3">Tumbler Block Iron</h5>
+                  <h6>High Durability</h6>
+                  <div class="d-flex justify-content-between">
+                    <p class="anu">#55,600</p>
+                    <p class="kilo">#45,000</p>
+                  </div>
+                    <div data-tooltip="Price:-#45000" class="button" class="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                      <div class="button-wrapper">
+                        <div class="text">Buy Now</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                      </svg>
+                          </span>
+                        </div>
+                      </div>
+                </div>
+             </div>
+            </div>
+        
+            <div id="merce" class="car-content mt-3">
+              <div class="ohh">
+                  <div class="fine">
+                  <img src="image/0ff1a198bfa2b15bed3af4b62c4f8e35-removebg-preview.png" alt="">
+                  <h5 class="mt-3">Alloy Welded Pipe</h5>
+                  <h6>High Durability</h6>
+                  <div class="d-flex justify-content-between">
+                    <p class="anu">#16,000</p>
+                    <p class="kilo">#14,100</p>
+                  </div>
+                    <div data-tooltip="Price:-#141000" class="button" class="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                      <div class="button-wrapper">
+                        <div class="text">Buy Now</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                      </svg>
+                          </span>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="fine">
+                  <img src="image/e4ae8b67b924dc4bf58682bdaadf0dc2-removebg-preview.png" alt="">
+                  <h5 class="mt-3">Oriented Strand Board</h5>
+                  <h6>High Durability</h6>
+                  <div class="d-flex justify-content-between">
+                    <p class="anu">#40,300</p>
+                    <p class="kilo">#37,300</p>
+                  </div>
+                    <div data-tooltip="Price:-#373000" class="button" class="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                      <div class="button-wrapper">
+                        <div class="text">Buy Now</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                      </svg>
+                          </span>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="fine">
+                  <img src="image/fff37367dc046773791930758f5a15bb-removebg-preview.png" alt="">
+                  <h5 class="mt-3">Medium Density Fiberboard</h5>
+                  <h6>High Durability</h6>
+                  <div class="d-flex justify-content-between">
+                    <p class="anu">#23,600</p>
+                    <p class="kilo">#20,000</p>
+                  </div>
+                    <div data-tooltip="Price:-#20000" class="button" class="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                      <div class="button-wrapper">
+                        <div class="text">Buy Now</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                      </svg>
+                          </span>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="fine">
+                  <img src="image/c57ed6c78f4ed274f74c1f7cbb821db4-removebg-preview.png" alt="">
+                  <h5 class="mt-3">Particleboard</h5>
+                  <h6>High Durability</h6>
+                  <div class="d-flex justify-content-between">
+                    <p class="anu">#15,600</p>
+                    <p class="kilo">#13,000</p>
+                  </div>
+                    <div data-tooltip="Price:-#13000" class="button" class="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                      <div class="button-wrapper">
+                        <div class="text">Buy Now</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                      </svg>
+                          </span>
+                        </div>
+                      </div>
+                </div>
+             </div>
+            </div>
+
+            <div id="glass" class="car-content mt-3">
+              <div class="ohh">
+                 <div class="fine">
+                   <img src="image/590e33488bd40410a3f9972d253e3bfd-removebg-preview.png" alt="">
+                   <h5 class="mt-3">Sheet Glasses</h5>
+                   <h6>High Durability</h6>
+                   <div class="d-flex justify-content-between">
+                     <p class="anu">#3,600</p>
+                     <p class="kilo">#2,700</p>
+                   </div>
+                    <div data-tooltip="Price:-#2700" class="button" class="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                      <div class="button-wrapper">
+                        <div class="text">Buy Now</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                      </svg>
+                          </span>
+                        </div>
+                      </div>
+                 </div>
+
+                 <div class="fine">
+                   <img src="image/ae2b7c90e20c0ca6ecc4b7ae1bf15016-removebg-preview.png" alt="">
+                   <h5 class="mt-3">Insulated Glas</h5>
+                   <h6>High Durability</h6>
+                   <div class="d-flex justify-content-between">
+                     <p class="anu">#5,600</p>
+                     <p class="kilo">#3,700</p>
+                   </div>
+                    <div data-tooltip="Price:-#3700" class="button" class="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                      <div class="button-wrapper">
+                        <div class="text">Buy Now</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                      </svg>
+                          </span>
+                        </div>
+                      </div>
+                 </div>
+
+                 <div class="fine">
+                   <img src="image/07a34a1d893f59d8712f340b7d6e3229-removebg-preview.png" alt="">
+                   <h5 class="mt-3">Safety Glass</h5>
+                   <h6>High Durability</h6>
+                   <div class="d-flex justify-content-between">
+                     <p class="anu">#2,600</p>
+                     <p class="kilo">#1,200</p>
+                   </div>
+                    <div data-tooltip="Price:-#1200" class="button" class="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                      <div class="button-wrapper">
+                        <div class="text">Buy Now</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                      </svg>
+                          </span>
+                        </div>
+                      </div> 
+                 </div>
+
+                 <div class="fine">
+                   <img src="image/fc046e011e0cb3c324749e91062026bd-removebg-preview.png" alt="">
+                   <h5 class="mt-3">Aluminium Glass</h5>
+                   <h6>High Durability</h6>
+                   <div class="d-flex justify-content-between">
+                     <p class="anu">#30,600</p>
+                     <p class="kilo">#28,000</p>
+                   </div>
+                    <div data-tooltip="Price:-#28000" class="button" class="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                      <div class="button-wrapper">
+                        <div class="text">Buy Now</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                      </svg>
+                          </span>
+                        </div>
+                      </div>
+                 </div>
+              </div>
+            </div>
+
+            <div id="roof" class="car-content mt-3">
+              <div class="ohh">
+                  <div class="fine">
+                  <img src="image/fa2dcbdc25d73521b7b4837190da73d6-removebg-preview.png" alt="">
+                  <h5 class="mt-3">Nails</h5>
+                  <h6>High Durability</h6>
+                  <div class="d-flex justify-content-between">
+                    <p class="anu">#16,000</p>
+                    <p class="kilo">#14,100</p>
+                  </div>
+                    <div data-tooltip="Price:-#141000" class="button" class="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                      <div class="button-wrapper">
+                        <div class="text">Buy Now</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                      </svg>
+                          </span>
+                        </div>
+                      </div>
+                </div>
+ 
+                <div class="fine">
+                  <img src="image/290aabaa2256f36fbae5cab52a6e7dca-removebg-preview.png" alt="">
+                  <h5 class="mt-3">Screws</h5>
+                  <h6>High Durability</h6>
+                  <div class="d-flex justify-content-between">
+                    <p class="anu">#40,300</p>
+                    <p class="kilo">#37,300</p>
+                  </div>
+                    <div data-tooltip="Price:-#373000" class="button" class="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                      <div class="button-wrapper">
+                        <div class="text">Buy Now</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                      </svg>
+                          </span>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="fine">
+                  <img src="image/bb1156606e0ee2c35c938f39c209a551-removebg-preview.png" alt="">
+                  <h5 class="mt-3">Bolts</h5>
+                  <h6>Smooth Tightening</h6>
+                  <div class="d-flex justify-content-between">
+                    <p class="anu">#23,600</p>
+                    <p class="kilo">#20,000</p>
+                  </div>
+                    <div data-tooltip="Price:-#20000" class="button" class="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                      <div class="button-wrapper">
+                        <div class="text">Buy Now</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                      </svg>
+                          </span>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="fine">
+                  <img src="image/f8693dfacfc3769840cabe34d2296175-removebg-preview.png" alt="">
+                  <h5 class="mt-3">Sledge Hammer</h5>
+                  <h6>High Durability</h6>
+                  <div class="d-flex justify-content-between">
+                    <p class="anu">#15,600</p>
+                    <p class="kilo">#13,000</p>
+                  </div>
+                    <div data-tooltip="Price:-#13000" class="button" class="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                      <div class="button-wrapper">
+                        <div class="text">Buy Now</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                      </svg>
+                          </span>
+                        </div>
+                      </div>
+                </div>
+             </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="six">
+        <div class="row">
+          <h4 class="mb-3">Our Remarkable Project Portfolio</h4>
+          <h6 class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus voluptas, in perspiciatis sapiente porro id quam ea modi accusantium assumenda hic magnam similique, velit cupiditate dolor eveniet ipsa voluptatum laborum.</h6>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="grou">
+                  <img src="image/30 Single-Story House ideas Embrace the Simplicity and Convenience of One-Level Living.jpg" alt="">
+                  <h5 class="mt-3 ">30 Single-Story House</h5>
+                  <h6>This 30 Single-Story House was started by our team on 14th May, 2023 and completed on 11th June, 2023.</h6>
+                  <div class="d-flex justify-content-between aut">
+                    <p>Location</p>
+                    <p>Akobo Ojurin, Ibadan</p>
+                  </div>
+                  <div class="d-flex justify-content-between aut">
+                    <p>Total Amount </p>
+                    <p>#50,000,000</p>
+                  </div>
+                  <a href="signup.html">
+                    <div data-tooltip="Price:-50000000" class="button">
+                      <div class="button-wrapper">
+                        <div class="text">Contact Us</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="grou">
+                  <img src="image/Designing a Modern Fast Food Restaurant.jpg" alt="">
+                  <h5 class="mt-3 ">Simple Restaurant</h5>
+                  <h6>This 30 Simple Restaurant was started  on 14th Feb, 2023 and completed on 11th April, 2023.</h6>
+                  <div class="d-flex justify-content-between aut">
+                    <p>Location</p>
+                    <p>Aja, Lagos</p>
+                  </div>
+                  <div class="d-flex justify-content-between aut">
+                    <p>Total Amount </p>
+                    <p>#50,000,000</p>
+                  </div>
+                  <a href="signup.html">
+                    <div data-tooltip="Price:-50000000" class="button">
+                      <div class="button-wrapper">
+                        <div class="text">Contact Us</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="grou">
+                  <img src="image/This Is What the Perfect House Looks Like, According to Pinterest.jpg" alt="">
+                  <h5 class="mt-3 ">Xtiana Game House</h5>
+                  <h6>This Xtiana Game House was started by our team on 14th May, 2023 and completed on 11th June, 2023.</h6>
+                  <div class="d-flex justify-content-between aut">
+                    <p>Location</p>
+                    <p>Aloo Bodija, Osun</p>
+                  </div>
+                  <div class="d-flex justify-content-between aut">
+                    <p>Total Amount </p>
+                    <p>#10,000,000</p>
+                  </div>
+                  <a href="signup.html">
+                    <div data-tooltip="Price:-10000000" class="button">
+                      <div class="button-wrapper">
+                        <div class="text">Contact Us</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="grou">
+                  <img src="image/famous-golden-gate-bridge-from-battery-spencer-vista-point.jpg" alt="">
+                  <h5 class="mt-3 ">Famous Golden_Gate Bridge</h5>
+                  <h6>Famous Golden_Gate Bridge was started by our team on 1th Aug, 2023 and completed on 11th Nov, 2023.</h6>
+                  <div class="d-flex justify-content-between aut">
+                    <p>Location</p>
+                    <p> Seoul, South Korea</p>
+                  </div>
+                  <div class="d-flex justify-content-between aut">
+                    <p>Total Amount </p>
+                    <p>#100,000,000</p>
+                  </div>
+                  <a href="signup.html">
+                    <div data-tooltip="Price:-100000000" class="button">
+                      <div class="button-wrapper">
+                        <div class="text">Contact Us</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="grou">
+                  <img src="image/Harim Group Headquarters Building _ The Beck Group.jpg" alt="">
+                  <h5 class="mt-3 ">Harim Group Headquarters Building</h5>
+                  <h6>Harim Group Headquarters Building was started on 11th Jan, 2024 and completed on 21th Feb, 2024.</h6>
+                  <div class="d-flex justify-content-between aut">
+                    <p>Location</p>
+                    <p> Seoul, South Korea</p>
+                  </div>
+                  <div class="d-flex justify-content-between aut">
+                    <p>Total Amount </p>
+                    <p>#100,000,000</p>
+                  </div>
+                  <a href="signup.html">
+                    <div data-tooltip="Price:-100000000" class="button">
+                      <div class="button-wrapper">
+                        <div class="text">Contact Us</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="grou">
+                  <img src="image/Hospital stock image_ Image of sign, hospital, building - 1023539.jpg" alt="">
+                  <h5 class="mt-3 ">Emergency Healthcare Hospital</h5>
+                  <h6>This Emergency Healthcare Hospital was on 14th May, 2023 and completed on 11th June, 2023.</h6>
+                  <div class="d-flex justify-content-between aut">
+                    <p>Location</p>
+                    <p>Akobo Ojurin, Abuja</p>
+                  </div>
+                  <div class="d-flex justify-content-between aut">
+                    <p>Total Amount </p>
+                    <p>#50,000,000</p>
+                  </div>
+                  <a href="signup.html">
+                    <div data-tooltip="Price:-50000000" class="button">
+                      <div class="button-wrapper">
+                        <div class="text">Contact Us</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="grou">
+                  <img src="image/SUPERMARKET São Gonçalo • Facade Project • Fachada.jpg" alt="">
+                  <h5 class="mt-3 ">Supermarket</h5>
+                  <h6>This Supermarket was started by our team on 14th May, 2023 and completed on 11th June, 2023.</h6>
+                  <div class="d-flex justify-content-between aut">
+                    <p>Location</p>
+                    <p>Oke-Ado, Ibadan</p>
+                  </div>
+                  <div class="d-flex justify-content-between aut">
+                    <p>Total Amount </p>
+                    <p>#35,000,000</p>
+                  </div>
+                  <a href="signup.html">
+                    <div data-tooltip="Price:-35000000" class="button">
+                      <div class="button-wrapper">
+                        <div class="text">Contact Us</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="grou">
+                  <img src="image/Avon Acres Event Center.jpg" alt="">
+                  <h5 class="mt-3 ">Avon Acres Event Center</h5>
+                  <h6>This Avon Acres Event Center was started by our team on 10th Jan, 2023 and completed on 11th March, 2023.</h6>
+                  <div class="d-flex justify-content-between aut">
+                    <p>Location</p>
+                    <p>Osaro Idumota, Lagos</p>
+                  </div>
+                  <div class="d-flex justify-content-between aut">
+                    <p>Total Amount </p>
+                    <p>#10,500,000</p>
+                  </div>
+                  <a href="signup.html">
+                    <div data-tooltip="Price:-10500000" class="button">
+                      <div class="button-wrapper">
+                        <div class="text">Contact Us</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="grou">
+                  <img src="image/Petrol Station Projects __ Photos, videos, logos, illustrations and branding.jpg" alt="">
+                  <h5 class="mt-3 ">FuelTech Petrol Station</h5>
+                  <h6>This FuelTech Petrol Station was started  on 14th April, 2023 and completed on 11th July, 2023.</h6>
+                  <div class="d-flex justify-content-between aut">
+                    <p>Location</p>
+                    <p>Alakia, Jos</p>
+                  </div>
+                  <div class="d-flex justify-content-between aut">
+                    <p>Total Amount </p>
+                    <p>#55,000,000</p>
+                  </div>
+                  <a href="signup.html">
+                    <div data-tooltip="Price:-55000000" class="button">
+                      <div class="button-wrapper">
+                        <div class="text">Contact Us</div>
+                          <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="seven">
+        <div class="row">
+          <h4 class="mb-3">Client Voices Of Satisfaction</h4>
+          <h6 class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ratione odit maxime quasi esse
+            iste, suscipit temporibus natus asperiores quas est culpa tenetur, alias dolores itaque et veniam dicta
+            beatae!</h6>
+            <div class="containe mt-3">
+              <div class="row">
+                  <div class="">
+                      <div class="slide row" id="slide1">
+                          <div class="col col-lg-8 wan">
+                            <div class="tex">
+                              <h5>"Their commitment to quality and attention to details is unmatched"</h4>
+                              <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ratione velit quae perspiciatis quisquam tempora corporis, quia molestias amet debitis quibusdam a error hic quis, similique veniam esse. Dignissimos, iure!</h6>
+                              <p class="wee">Brett Jane</p>
+                              <p class="ali">Founder of Supermarket</p>
+                          </div>
+                          </div>
+                          <div class="col col-lg-4 tran d-lg-block d-none">
+                            <div class="image" id="image1">
+                              <img src="https://media.istockphoto.com/id/1309328823/photo/headshot-portrait-of-smiling-male-employee-in-office.jpg?s=612x612&w=0&k=20&c=kPvoBm6qCYzQXMAn9JUtqLREXe9-PlZyMl9i-ibaVuY=" alt="Slide Image 1">
+                          </div>
+                          </div>
+                      </div>
+          
+                      <div class="slide row" id="slide2">
+                        <div class="col col-lg-8 wan">
+                          <div class="tex">
+                            <h5>"Prompt delivery and top-notch customer support, highly recommended!"</h4>
+                            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ratione velit quae perspiciatis quisquam tempora corporis, quia molestias amet debitis quibusdam a error hic quis, similique veniam esse. Dignissimos, iure!</h6>
+                            <p class="wee">Power's Omari</p>
+                            <p class="ali">Founder of Simple Restaurant</p>
+                        </div>
+                        </div>
+                        <div class="col col-lg-4 tran d-lg-block d-none">
+                          <div class="image" id="image2">
+                            <img src="  https://images.pexels.com/photos/5641937/pexels-photo-5641937.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Slide Image 1">
+                          
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="slide row" id="slide3">
+                      <div class="col col-lg-8 wan">
+                        <div class="tex">
+                          <h5>"Reliable and trustworthy - a partner you can depend on for excellence."</h4>
+                          <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ratione velit quae perspiciatis quisquam tempora corporis, quia molestias amet debitis quibusdam a error hic quis, similique veniam esse. Dignissimos, iure!</h6>
+                          <p class="wee">Omari Harwick</p>
+                          <p class="ali">Founder of Xtiana Game House</p>
+                      </div>
+                      </div>
+                      <div class="col col-lg-4 tran d-lg-block d-none">
+                        <div class="image" id="image3">
+                          <img src="https://media.istockphoto.com/id/1323164422/photo/middle-aged-man-counting-dollars.jpg?s=612x612&w=0&k=20&c=l3DIZZkhWCtBHZ3nnyb7n_UloRcJhm21V2IgW9DURTs=" alt="Slide Image 1">
+                      </div>
+                      </div>
+                  </div>
+
+                  <div class="slide row" id="slide4">
+                    <div class="col col-lg-8 wan">
+                      <div class="tex">
+                        <h5>"Flawless execution, our project was completed with precision and style."</h4>
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ratione velit quae perspiciatis quisquam tempora corporis, quia molestias amet debitis quibusdam a error hic quis, similique veniam esse. Dignissimos, iure!</h6>
+                        <p class="wee">Ahmed Musa</p>
+                        <p class="ali">Founder of Harim Group</p>
+                    </div>
+                    </div>
+                    <div class="col col-lg-4 tran d-lg-block d-none">
+                      <div class="image" id="image4">
+                        <img src="https://images.pexels.com/photos/3848184/pexels-photo-3848184.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Slide Image 1">
+                    </div>
+                    </div>
+                </div>
+
+                <div class="slide row" id="slide5">
+                  <div class="col col-lg-8 wan">
+                    <div class="tex">
+                      <h5>"The team's professionalism and dedication shine through in every project."</h4>
+                      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ratione velit quae perspiciatis quisquam tempora corporis, quia molestias amet debitis quibusdam a error hic quis, similique veniam esse. Dignissimos, iure!</h6>
+                      <p class="wee">Ahmed Musa</p>
+                      <p class="ali">Founder of Avon Acres Event Center</p>
+                  </div>
+                  </div>
+                  <div class="col col-lg-4 tran d-lg-block d-none">
+                    <div class="image" id="image5">
+                      <img src="https://images.pexels.com/photos/7128975/pexels-photo-7128975.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Slide Image 1">
+                  </div>
+                  </div>
+              </div>
+
+                  </div>
+              </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="eight">
+        <div class="row">
+          <h4>Have any upcoming project?</h4>
+           <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur rerum nisi suscipit, ut officia perspiciatis molestias nostrum consequatur adipisci quam quia. Blanditiis quidem, voluptatum provident adipisci sint ad deserunt dolorem?</h6>
+          <div class="mind">
+            <a href="signup.html" class="mt-3">
+              <div data-tooltip="contact us" class="button">
+                <div class="button-wrapper">
+                  <div class="text">Contact Us</div>
+                    <span class="icon">
+                      <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+            </a>
+          </div>
+        </div>
+      </section>  
+      
+      <footer>
+        <div class="row">
+          <div class="d-flex justify-content-between align-items-center com">
+            <div class="ala">
+              <div class="scr d-flex align-items-center gap-2">
+                <img src="image/4fd4b7b905c94181f23deed5fd4b4826-removebg-preview.png" alt="">
+                <h3 class="navbar-brand mt-2 text-white">Structura</h1>
+              </div>
+              <h6 class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, dolorum!</h6>
+            </div>
+            <div class="mt-5 moni">
+              <h6 class="text-white">Enter your email to register with us</h6>
+              <form action="">
+                <input type="email" placeholder="structura@gmail.com" name="" id="">
+              </form>
+            </div>
+          </div>
+          <h5 class="text-white">Structura &copy; 2024</h5>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      let cartCounter = 0;
+let totalPrice = 0; 
+function checkout() {
+        const productName = document.getElementById('selectedProductName').textContent;
+        const productImage = document.getElementById('selectedProductImage').src;
+        const totalPrice = document.getElementById('totalPrice').textContent;
+        window.open(`check.html?productName=${encodeURIComponent(productName)}&productImage=${encodeURIComponent(productImage)}&totalPrice=${encodeURIComponent(totalPrice)}`, '_blank');
+      }
+
+function updateTotalPrice() {
+    const totalPriceElement = document.getElementById('totalPrice');
+    totalPriceElement.textContent = totalPrice.toFixed(2);
+}
+
+function toggleCart() {
+    const offCanvas = document.querySelector('.offcanvas');
+    offCanvas.style.right = offCanvas.style.right === '0px' ? '-600px' : '0';
+}
+
+function redirectToProductPage() {
+    console.log('Redirecting to the product page...');
+}
+
+function displayProductDetails(name, description, price, image) {
+    const selectedProduct = document.getElementById('productDetails');
+    const selectedProductName = document.getElementById('selectedProductName');
+    const selectedProductDescription = document.getElementById('selectedProductDescription');
+    const selectedProductPrice = document.getElementById('selectedProductPrice');
+    const selectedProductImage = document.getElementById('selectedProductImage');
+    const selectedProductQuantity = document.getElementById('selectedProductQuantity');
+    const quantityAdjustment = document.querySelector('.quantity-adjustment');
+    const removeButton = document.querySelector('.remove-button');
+
+    selectedProductPrice.dataset.initialPrice = price;
+
+    selectedProductName.textContent = name;
+    selectedProductDescription.textContent = description;
+    selectedProductPrice.textContent = `#${price}`;
+    selectedProductImage.src = image;
+    selectedProductQuantity.textContent = '1';
+    quantityAdjustment.style.display = 'flex';
+    removeButton.style.display = 'block';
+
+    selectedProduct.style.display = 'flex';
+    selectedProduct.style.flexDirection = 'row';
+
+    updateCartCounter(1);
+    totalPrice += price;
+    updateTotalPrice();
+}
+
+function adjustQuantity(amount) {
+    const selectedProductQuantity = document.getElementById('selectedProductQuantity');
+    let quantity = parseInt(selectedProductQuantity.textContent) + amount;
+    quantity = Math.max(quantity, 1);
+
+    selectedProductQuantity.textContent = quantity.toString();
+    updatePrice();
+    const selectedProductPrice = document.getElementById('selectedProductPrice');
+    const initialPrice = parseFloat(selectedProductPrice.dataset.initialPrice);
+    totalPrice += amount * initialPrice;
+
+    updateTotalPrice();
+}
+
+function updatePrice() {
+    const selectedProductPrice = document.getElementById('selectedProductPrice');
+    const selectedProductQuantity = document.getElementById('selectedProductQuantity');
+    const initialPrice = parseFloat(selectedProductPrice.dataset.initialPrice);
+    const quantity = parseInt(selectedProductQuantity.textContent);
+
+    const updatedPrice = quantity * initialPrice;
+    selectedProductPrice.textContent = `$${updatedPrice.toFixed(2)}`;
+}
+
+function updateCartCounter(delta) {
+    cartCounter += delta;
+    const cartCounterElement = document.getElementById('cart-counter');
+    cartCounterElement.textContent = cartCounter.toString();
+}
+
+function removeFromCart() {
+    const selectedProduct = document.getElementById('productDetails');
+    selectedProduct.style.display = 'none';
+    updateCartCounter(-1);
+    const selectedProductPrice = document.getElementById('selectedProductPrice');
+    const initialPrice = parseFloat(selectedProductPrice.dataset.initialPrice);
+    const quantity = parseInt(document.getElementById('selectedProductQuantity').textContent);
+    totalPrice -= quantity * initialPrice;
+
+    updateTotalPrice();
+}
+    </script>
+   <script src="main.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 40,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+      },
+  });
+    </script>
+
+<script>
+  let currentSlide = 1;
+  const totalSlides = 5;
+
+  function showSlide() {
+      document.querySelector(`#slide${currentSlide}`).style.display = "flex";
+      setTimeout(hideSlide, 5000);
+  }
+
+  function hideSlide() {
+      document.querySelector(`#slide${currentSlide}`).style.display = "none";
+      currentSlide = (currentSlide % totalSlides) + 1;
+      showSlide();
+  }
+
+  showSlide();
+</script>
+
+</body>
+</html>

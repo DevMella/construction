@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Family Animation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  .shop-all span {
+    font-family: Arial; /* Initial font-family */
+}
+
+</style>
+<body>
+    <div class="shop-all" id="shopAll">Shop All</div>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+    const shopAll = document.getElementById('shopAll');
+    const text = shopAll.textContent.trim();
+    const delay = 2000; // 2 seconds delay before font-family change
+    const fontFamily = [ 'Verdana']; // List of font families to cycle through
+    let currentFontFamilyIndex = 0;
+
+    // Function to gradually change font-family from the first letter to the last letter
+    function changeFontFamily(index) {
+        if (index < text.length) {
+            // Update font-family for the current letter
+            shopAll.style.fontFamily = fontFamily[currentFontFamilyIndex];
+            // Move to the next font-family for the next letter
+            currentFontFamilyIndex = (currentFontFamilyIndex + 1) % fontFamily.length;
+            // Schedule change for the next letter
+            setTimeout(() => changeFontFamily(index + 1), delay);
+        }
+    }
+
+    // Delay before starting font-family change
+    setTimeout(() => {
+        changeFontFamily(0);
+    }, delay);
+});
+
+    </script>
+</body>
+</html>
+
+
+
+
+

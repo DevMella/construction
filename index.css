@@ -1,0 +1,659 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+}
+.all{
+    overflow: hidden;
+}
+.fir{
+    width: 100%;
+    height:100vh;
+    background-image:linear-gradient(to right, rgba(0,0,0,0.6)50%, rgb(0,0,0,0.6)50%), url("https://images.pexels.com/photos/1936750/pexels-photo-1936750.jpeg?auto=compress&cs=tinysrgb&w=1500");
+    background-repeat: no-repeat;
+    background-position: right; 
+    color: white;
+}
+.navbar{
+    padding: 3px  14px 0px 10px;
+    width: 100%;
+    height: 80px;
+    background-image:linear-gradient(to right, rgba(0,0,0,0.6)50%, rgb(0,0,0,0.6)50%), url("https://images.pexels.com/photos/1936750/pexels-photo-1936750.jpeg?auto=compress&cs=tinysrgb&w=1500");
+    background-repeat: no-repeat;
+    position: fixed;
+}
+.btn{
+  background-color: transparent;
+}
+#offcanvasRight{
+  width: 500px;
+}
+#cart-counter{
+  font-weight: 800;
+  font-size: 23px;
+}
+.cart-icon{
+  font-size: 20px;
+}
+.offcanvas-body p{
+  margin-top: -15px;
+  font-weight: 800;
+}
+.shop{
+  width: 130px;
+  height: 50px;
+  background-color:  rgb(238, 215, 181);
+  border-radius: 5px;
+  font-weight: 800;
+}
+.offcanvas-body a{
+  text-decoration: none;
+}
+.offcanvas-body h5{
+  font-size: 30px;
+  font-weight: 800;
+}
+.dai h6{
+  font-weight: 800;
+  font-size: 18px;
+}
+#productDetails {
+  display: none;
+  flex-direction: column-reverse;
+  display: flex;
+  justify-content: space-between;
+}
+.fou{
+  padding: 10px 0px 0px 0px ;
+}
+.fou p{
+  font-size: 20px;
+}
+
+.owo{
+  width: 130px;
+  height: 40px;
+  background-color:  rgb(238, 215, 181);
+  border-radius: 5px;
+  font-weight: 800;
+  font-size: 16px;
+}
+.sid{
+  border: 1px solid black;
+  height: 40px;
+  width: 110px;
+  gap: 33px;
+  padding: 6px;
+  border-radius: 6px;
+}
+.remove-button{
+  margin-left: 20px;
+  text-decoration: underline;
+}
+#selectedProductQuantity{
+  margin-top: 2px !important;
+}
+#selectedProductDescription{
+  font-weight: 800;
+  font-size: 19px;
+}
+#totalPrice{
+  font-weight: 800;
+}
+.sweet h5{
+  font-size: 15px;
+}
+.inu img{
+  width: 100px;
+}
+.selected-product {
+  display: none;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.selected-product img {
+  width: 80px;
+}
+.quantity-adjustment {
+  display: none;
+  align-items: center;
+}
+#offcanvasMenu{
+  width: 350px;
+}
+#offcanvasMenu{
+  width: 350px;
+}
+.nav-item{
+  font-weight: 800 !important;
+  font-size: 20px;
+  color: white;
+}
+.scr img{
+  width: 30px;
+}
+.scr h3{
+  font-weight: 600;
+  font-size: 26px;
+}
+button {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+.rat{
+  padding: 220px  30px;
+}
+.rat h1{
+  font-weight: 590;
+  font-size: 65px;
+}
+.rat h5{
+  font-weight: 600;
+  width: 1200px;
+}
+.buttons button {
+  width: 150px;
+  height: 50px;
+  background-color: ivory;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.buttons button:before, .buttons button:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: ivory;
+  transition: all 0.3s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+.buttons button:before {
+  right: 0;
+  top: 0;
+  transition: all 0.5s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+.buttons button:after {
+  left: 0;
+  bottom: 0;
+}
+.buttons button span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+.buttons button span:before, .buttons button span:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 0;
+  background-color: ivory;
+  transition: all 0.3s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+.buttons button span:before {
+  right: 0;
+  top: 0;
+  transition: all 0.5s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+.buttons button span:after {
+  left: 0;
+  bottom: 0;
+}
+.buttons button p {
+  padding: 0;
+  margin: 0;
+  transition: all 0.4s cubic-bezier(0.35, 0.1, 0.25, 1);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.buttons button p:before, .buttons button p:after {
+  position: absolute;
+  width: 100%;
+  transition: all 0.4s cubic-bezier(0.35, 0.1, 0.25, 1);
+  z-index: 1;
+  left: 0;
+}
+.buttons button p:before {
+  content: attr(data-title);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.buttons button p:after {
+  content: attr(data-text);
+  top: 150%;
+  color: black;
+}
+.buttons button:hover:before, .buttons button:hover:after {
+  width: 100%;
+}
+.buttons button:hover span {
+  z-index: 1;
+}
+.buttons button:hover span:before, .buttons button:hover span:after {
+  height: 100%;
+}
+.buttons button:hover p:before {
+  top: -50%;
+  transform: rotate(5deg);
+}
+.buttons button:hover p:after {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.buttons button.start {
+  background-color: #44d8a4;
+  box-shadow: 0px 5px 10px -10px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+.buttons button.start p:before {
+  top: -50%;
+  transform: rotate(5deg);
+}
+.buttons button.start p:after {
+  color: white;
+  transition: all 0s ease;
+  content: attr(data-start);
+  top: 50%;
+  transform: translateY(-50%);
+  animation: start 0.3s ease;
+  animation-fill-mode: forwards;
+}
+@keyframes start {
+  from {
+    top: -50%;
+  }
+}
+.buttons button.start:hover:before, .buttons button.start:hover:after {
+  display: none;
+}
+.buttons button.start:hover span {
+  display: none;
+}
+.buttons button:active {
+  outline: none;
+  border: none;
+}
+.buttons button:focus {
+  outline: 0;
+}
+.two{
+  background-color: whitesmoke;
+  width: 100%;
+  padding: 30px 30px 25px 30px;
+}
+.rate h3{
+  font-weight: 600;
+}
+.ras{
+  width: 100%;
+  height: 60px;
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 13px 7px 7px 7px;
+}
+.ras h6{
+  font-weight: 700;
+}
+.three{
+  width: 100%;
+  padding: 50px 30px 80px 30px;
+}
+.three h4,.four h4,.five h4,.six h4,.seven h4,.eight h4{
+  font-weight: 800;
+  font-size: 38px;
+}
+.ido{
+  width: 100%;
+  padding: 18px 10px 1px 10px;
+  border-radius: 10px;
+  background-color: gainsboro;
+}
+.ido h6,.hun h6{
+  font-weight: 800;
+  margin-top: 10px;
+}
+.hun{
+  box-shadow: #63636333 0px 1px 4px 0px;
+  width: 100%;
+  padding: 18px 10px 1px 10px;
+  border-radius: 10px;
+}
+.four ,.five,.six,.seven,.eight{
+  width: 100%;
+  padding: 0px 30px 80px 30px;
+}
+.lal{
+  background-image:linear-gradient(to right, rgba(0,0,0,0.6)50%, rgb(0,0,0,0.6)50%), url(https://images.pexels.com/photos/10130749/pexels-photo-10130749.jpeg?auto=compress&cs=tinysrgb&w=600);
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  color: white;
+  padding: 260px 10px 10px 10px;
+}
+.lal h5,.lal h6,.lat h5,.lat h6,.law h5,.law h6{
+  font-weight: 800;
+}
+.lal a,.lat a,.law a{
+  text-decoration: none;
+  color: white;
+}
+.lat{
+  background-image:linear-gradient(to right, rgba(0,0,0,0.6)50%, rgb(0,0,0,0.6)50%), url(https://media.istockphoto.com/id/95019638/photo/bricklayers-using-levels.jpg?s=612x612&w=0&k=20&c=1jitoRJmCED3kOUlRfosU9YRem2hAeOr0BKkUwP-iP0=);
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  color: white;
+  padding: 260px 10px 10px 10px;
+}
+.law{
+  background-image:linear-gradient(to right, rgba(0,0,0,0.6)50%, rgb(0,0,0,0.6)50%), url(https://images.pexels.com/photos/3855471/pexels-photo-3855471.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  color: white;
+  padding: 260px 10px 10px 10px;
+}
+.ohh{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.fine{
+  width: 100%;
+  box-shadow: #63636333 0px 1px 4px 0px;
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+.fine img{
+  width: 150px;
+  height: 110px;
+  margin-left: 50px;
+  object-fit: cover;
+}
+.fine h5{
+  font-weight: 800;
+}
+.anu{
+  text-decoration: line-through;
+}
+.fine h6{
+  font-weight: 800;
+}
+.materials{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  border: none;
+}
+.colo{
+  width: 200px;
+  margin-bottom: 30px;
+  height: 40px;
+  border-radius: 30px;
+  box-shadow: #63636333 0px 1px 4px 0px;
+}
+.colo:hover{
+  background-color: black;
+  color: white;
+}
+.button {
+  --width: 100%;
+  --height: 35px;
+  --tooltip-height: 35px;
+  --tooltip-width: 130px;
+  --gap-between-tooltip-to-button: 18px;
+  --button-color: #222;
+  --tooltip-color: #fff;
+  width: var(--width);
+  height: var(--height);
+  background: var(--button-color);
+  position: relative;
+  text-align: center;
+  border-radius: 20px;
+  font-family: "Arial";
+  transition: background 0.3s;
+}
+.button::before {
+  position: absolute;
+  content: attr(data-tooltip);
+  width: var(--tooltip-width);
+  height: var(--tooltip-height);
+  background-color: #555;
+  font-size: 0.9rem;
+  color: #fff;
+  border-radius: .25em;
+  line-height: var(--tooltip-height);
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+  left: calc(50% - var(--tooltip-width) / 2);
+}
+.button::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #555;
+  left: calc(50% - 10px);
+  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+}
+.button::after,.button::before {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-wrapper,.text,.icon {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  color: #fff;
+}
+.text {
+  top: 0
+}
+.text,.icon {
+  transition: top 0.5s;
+}
+.icon {
+  color: #fff;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+.button:hover {
+  background: #222;
+}
+.button:hover .text {
+  top: -100%;
+}
+.button:hover .icon {
+  top: 0;
+}
+.button:hover:before,.button:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+.button:hover:after {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+}
+.button:hover:before {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+}
+.text {
+  font-weight: 800;
+}
+.ser img{
+  margin-top: -50px;
+}
+.grou img{
+  width: 100%;
+  border-radius: 10px;
+  height: 410px;
+}
+.grou h5{
+  font-weight: 800;
+}
+.aut p{
+  font-weight: 800;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 103vh;
+}
+.slide {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+.wan{
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 20px;
+}
+.tex h5{
+  font-size: 30px;
+  font-weight: 800;
+}
+.tex h6{
+  line-height: 27px;
+}
+.wee{
+  font-weight: 800;
+}
+.ali{
+  margin-top: -15px;
+}
+.tran img{
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.mind{
+  width: 190px;
+}
+.eight h6{
+  line-height: 26px;
+}
+footer{
+  width: 100%;
+  padding: 0px 30px 30px 20px;
+  background-color: black;
+}
+footer input{
+  width: 100%;
+  height: 40px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  outline: none;
+}
+.ala h6{
+  margin-top: -15px;
+  margin-left: 10px;
+}
+footer h5{
+  margin-left: 10px;
+}
+@media (max-width:767px) {
+  .navbar{
+    padding: 3px  14px 0px 0px;
+  }
+  .rat h1{
+    font-size: 33px;
+    font-weight: 700;
+  }
+  .rat{
+    padding: 180px  14px 0px 15px;
+  }
+  .scr img{
+    width: 27px;
+    margin-left: -5px;
+  }
+  .rat h5{
+    font-weight: 300;
+ }
+  .two,.three,.four,.five,.six,.seven,.eight,footer{
+    padding: 40px  14px 40px 15px;
+  }
+  .three h4,.four h4,.five h4,.six h4,.seven h4,.eight h4{
+    font-size: 25px;
+  }
+  .lal,.lat ,.law {
+    padding: 240px 10px 10px 10px;
+  }
+  .ohh{
+    grid-template-columns: 1fr;
+  }
+  .materials{
+    align-items: flex-start;
+    gap: 0px;
+    flex-direction: column;
+  }
+  .colo{
+    margin-bottom: 7px;
+    height: 39px;
+    width: 100%;
+    }
+    .swiper-wrapper {
+      width: 100%;
+      height: 96vh;
+    }
+    .swiper{
+      padding: 0px 0px 0px 0px;
+      width: 100%;
+    }
+    .grou h6{
+      margin-right: 15px;
+    }
+    .aut,.grou a{
+      margin-right: 25px;
+    }
+    .mind{
+      width: 100% ;
+    }
+    .com{
+      flex-direction: column;
+    }
+    .moni{
+      margin-left: -40px;
+      margin-bottom: 20px;
+    }
+    .owo{
+      width: 90px;
+    }
+    .inu img{
+      width: 60px;
+      height: 60px;
+    }
+}
